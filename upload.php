@@ -17,7 +17,7 @@ $errors = '';
 /**
  * Create the uploads dir
  */
-if(!is_dir('UPLOAD_DIR'))
+if(!is_dir(UPLOAD_DIR))
 {
     mkdir(UPLOAD_DIR);
 }
