@@ -15,6 +15,13 @@ $mime = '';
 $size = 0;
 $errors = '';
 /**
+ * Create the uploads dir
+ */
+if(!is_dir('UPLOAD_DIR'))
+{
+    mkdir(UPLOAD_DIR);
+}
+/**
  * Delete picture
  */
 if(isset($_GET['delete']) && $_GET['delete'] === 'true' && isset($_GET['file']) && !empty($_GET['file']))
